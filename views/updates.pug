@@ -1,0 +1,11 @@
+doctype html
+html
+ head
+  title=title
+ body
+  h1=title
+  form(action="/update-cobj" method="POST")
+   input(type="text" name="name" placeholder="Name")
+   input(type="text" name="publisher" placeholder="Publisher")
+   input(type="number" name="price" placeholder="Price")
+   button(type="submit") Submit

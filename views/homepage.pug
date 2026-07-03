@@ -1,0 +1,18 @@
+doctype html
+html
+ head
+  title=title
+  link(rel="stylesheet",href="/css/style.css")
+ body
+  h1 Custom Object Table
+  a(href="/update-cobj") Add
+  table(border="1")
+   tr
+    th Name
+    th Publisher
+    th Price
+   each object in data
+    tr
+     td=object.properties.name
+     td=object.properties.publisher
+     td=object.properties.price
